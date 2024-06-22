@@ -1,0 +1,47 @@
+.box_slidemode {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  background-color: red;
+  pointer-events: none;
+}
+
+.example {
+  display: flex;
+  align-items: center;
+}
+
+input {
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+label code {
+  width: 100px;
+}
+
+input[type="number"] {
+  border: 0;
+  border-bottom: 1px dotted var(--accent);
+
+  margin-left: 10px;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-bottom: 2px solid var(--accent);
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
